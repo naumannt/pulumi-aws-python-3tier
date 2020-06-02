@@ -1,0 +1,5 @@
+config:
+  AWS_example:pathToWebsiteContents: ./www
+  AWS_example:targetDomain: <placeholder>
+  aws:profile: <placeholder>
+  aws:region: <placeholder>

@@ -1,0 +1,15 @@
+name: AWS_example
+runtime: python
+description: A minimal Python Pulumi program
+template:
+  config:
+    aws:profile:
+      description: The AWS profile the stack should use (see your ./aws/credentials file)
+    aws:region:
+      description: The region to deploy the stack resources in
+    AWS_example:targetDomain:
+      description: The domain to serve the website at (e.g. www.example.com)
+    AWS_example:pathToWebsiteContents:
+      description: Relative path to the website's contents (e.g. the `./www` folder)
+    AWS_example:certificateArn:
+      description: (Optional) ACM certificate ARN for the target domain; must be in the us-east-1 region. If omitted, a certificate will be created.
